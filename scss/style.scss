@@ -1,0 +1,55 @@
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+section {
+	width: 100%;
+	position: relative;
+	&:nth-of-type(1) {
+		height: 1000px;
+		background-color: orange;
+	}
+	&:nth-of-type(2) {
+		height: 1200px;
+		background-color: hotpink;
+	}
+	&:nth-of-type(3) {
+		height: 900px;
+		background-color: aqua;
+	}
+	&:nth-of-type(4) {
+		height: 1700px;
+		background-color: lightgreen;
+	}
+}
+
+ul {
+	position: fixed;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+	li {
+		width: 20px;
+		height: 20px;
+		border-radius: 10px;
+		background-color: #fff;
+		margin-bottom: 20px;
+		cursor: pointer;
+		transition: all 0.5s;
+		&.on {
+			height: 80px;
+			background-color: #111;
+		}
+	}
+}
