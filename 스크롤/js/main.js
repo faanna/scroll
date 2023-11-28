@@ -52,18 +52,6 @@ window.addEventListener('scroll', () => {
 				el.classList.remove('on');
 			}
 			sections[index].classList.add('on');
-			
-			for (let el of lis) {
-				el.classList.remove('on');
-			}
-			lis[index].classList.add('on');
 		}
-	});
-
-});
-
-lis.forEach((el, index) => {
-	el.addEventListener('click', () => {
-		window.scrollTo({ top: postionArray[index], behavior: 'smooth' });
 	});
 });
